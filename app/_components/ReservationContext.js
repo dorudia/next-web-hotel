@@ -5,7 +5,10 @@ import { createContext, useContext, useState } from "react";
 const ReservationContext = createContext();
 
 function ReservationProvider({ children }) {
-  const [range, setRange] = useState({ from: undefined, to: undefined });
+  const [range, setRange] = useState((from, to) => {
+    if ((from = to)) return;
+    return { from: undefined, to: undefined };
+  });
   const resetRange = () => {
     setRange({ from: null, to: null });
   };
