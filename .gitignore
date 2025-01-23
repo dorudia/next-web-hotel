@@ -1,0 +1,17 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+jspm_packages/# Next.js build output
+.next/
+
+# Large files
+node_modules/@next/swc-darwin-x64/next-swc.darwin-x64.node
