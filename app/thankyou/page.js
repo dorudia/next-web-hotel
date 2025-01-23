@@ -2,7 +2,7 @@ export default function Page() {
   return (
     <div className="text-center space-y-6 mt-4">
       <h1 className="text-3xl font-semibold">
-        Thank you for your reservation!
+        Thank you for your reservation! <span className="text-5xl">👍</span>
       </h1>
       <a
         href="/account/reservations"
